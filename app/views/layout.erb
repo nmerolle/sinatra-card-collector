@@ -10,20 +10,30 @@
     <title>SinatraCardCollector</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+          <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <link rel="stylesheet" href="/stylesheets/main.css" />
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="wrapper">
+    <nav class="grey darken-3">
+      <div class="nav wrapper container">
+        <a href="/" class="brand-logo right">Card Collector</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Cards</a></li>
+            <li><a href="/cards/new">Add a Card</a></li>
+            <li><a href="#">Signup</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
 
         <%= yield %>
 
-      <footer class="branding">
-        <small>&copy; 2021 <strong>SinatraCardCollector</strong></small>
-      </footer>
-    </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <!--[if lt IE 7]>
       <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
       <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>

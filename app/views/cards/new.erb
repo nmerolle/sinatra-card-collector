@@ -1,0 +1,34 @@
+<h3>Add a New Card</h3><br><br>
+
+<form action = "/cards" method="POST">
+  <div>
+    <label for="playername">Player Name:</label><input placeholder="Player Name" name="playername" id="playername" type="text">
+  </div>
+  <br>
+  <div>
+    <label for="team">Team:</label><input type="text" placeholder="Team" name="team" id="team">
+  </div>
+  <br>
+    <div>
+    <label for="card_company">Card Company:</label><input type="text" placeholder="Card Company" name="card_company" id="team">
+  </div>
+  <br>
+  <div>
+    <label for="year">  Year:  </label><input name="year" id="team" type="datepicker" class="validate">
+  </div>
+  <br><br>
+    <input type="submit" value="Add Card" class="btn grey darken-3">>
+  </form>
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+    $( ".datepicker" ).datepicker({dateFormat: 'yyyy'});
+  });​
+</script>

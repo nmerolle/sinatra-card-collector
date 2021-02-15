@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_15_023459) do
+ActiveRecord::Schema.define(version: 2021_02_15_094422) do
 
   create_table "cards", force: :cascade do |t|
     t.string "playername"
     t.string "team"
-    t.integer "year"
+    t.date "year"
     t.string "card_company"
     t.integer "user_id"
   end
