@@ -1,0 +1,6 @@
+<h3>Your Collection</h3>
+<ul>
+<% @cards.each do |card| %>
+<li><a href="/cards/<%= card.id %>" > <%= card.playername %></a></li>
+<%end%>
+</ul>
