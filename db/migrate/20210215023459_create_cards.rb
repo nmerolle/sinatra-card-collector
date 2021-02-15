@@ -6,7 +6,6 @@ class CreateCards < ActiveRecord::Migration
       t.integer :year
       t.string :card_company
       t.integer :user_id
-
     end
   end
 end
