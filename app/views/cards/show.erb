@@ -1,8 +1,14 @@
-<h3><%= @card.playername %></h3>
+<h3><%= @card.playername %></h3><br><br>
+
+<ul><strong>Team: &nbsp; <%= @card.team %></strong></ul>
+<ul><strong>Company: &nbsp; <%= @card.card_company %></strong></ul>
+<ul><strong>Year: &nbsp; <%= @card.year %></strong></ul>
 
 
 
-
-<ul>Team:     <%= @card.team %></ul>
-<ul>Company:  <%= @card.card_company %></ul>
-<ul>Year:     <%= @card.year %></</ul>
+<form action="/cards/<%= @card.id %>" method="POST">
+  <a href="/cards/<%= @card.id %>/edit"  class="btn grey darken-3">Edit</a> &nbsp;
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete Card" class="btn red darken-3">
+  </form>
+ 
