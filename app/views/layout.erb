@@ -28,11 +28,12 @@
             <% if !logged_in? %>
               <li><a href="/login">Login</a></li>
               <li><a href="/signup">Signup</a></li>
-            <% else%>
+            <% else %>
               <li><a href="/cards">Your Cards</a></li>
               <li><a href="/cards/new">Add a Card</a></li>
               <li><a href="/logout">Logout</a></li>
             <% end %>
+          
           </ul>
         </div>
       </nav>
