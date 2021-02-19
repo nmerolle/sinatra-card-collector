@@ -1,5 +1,7 @@
 <h3>Add a New Card</h3><br><br>
-
+<% if flash[:error] %>
+  <%= flash[:error].join(" ") %>
+<% end %>
 <form action = "/cards" method="POST">
   <div>
     <label for="playername">Player Name:</label><input placeholder="Player Name" name="card[playername]" id="playername" type="text" >
