@@ -12,7 +12,8 @@ class UserController < ApplicationController
       if @user.save
         session[:user_id] = @user.id   
         redirect '/cards'
-      else 
+      else
+        flash[:error] = @user.errors.full_messages
         redirect '/signup'
       end
     end

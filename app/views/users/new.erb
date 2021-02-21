@@ -1,4 +1,7 @@
 <h4>Create User Account</h4>
+<% if flash[:error] %>
+  <%= flash[:error].join(" ") %>
+<% end %>
 
 <form action = "/signup" method="POST">
   <div>
@@ -6,11 +9,11 @@
   </div>
   <br>
   <div>
-    <label for="email">E-mail:</label><input type="text" name="user[email]" id="email">
+    <label for="email">E-mail:</label><input type="email" name="user[email]" id="email">
   </div>
   <br>
   <div>
-    <label for="password">Password:</label><input type="text" name="user[password]" id="password">
+    <label for="password">Password:</label><input type="password" name="user[password]" id="password">
   </div>
   <br><br>
     <input type="submit" value="Create Account" class="btn grey darken-3">
