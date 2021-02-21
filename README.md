@@ -6,7 +6,7 @@
  Simply log in and input the nformation for your new card and it wil be added 
  to your collection.
 
-## Useage
+## Usage
 
 1. Clone this repository.
 2. At the command prompt cd into the sinatra-card-collector folder
