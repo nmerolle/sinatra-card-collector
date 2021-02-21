@@ -12,11 +12,11 @@
 2. At the command prompt cd into the sinatra-card-collector folder
 3. Run bundle install. 
 4. Run shotgun.
-5. Open the link provided by shotgun in yuor browser and begin adding cards.
+5. Open the link provided by shotgun in your browser and begin adding cards.
 
 ## Contributors
 
-Written Nicholas Merolle with assistance and guidance from Dustin Anderson.
+Written by Nicholas Merolle with assistance and guidance from Dustin Anderson.
 
 ## Licensing
 
